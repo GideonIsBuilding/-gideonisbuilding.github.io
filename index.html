@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Gideon — DevOps & SRE Engineer. Observability, synthetic monitoring, and resilient infrastructure." />
+  <title>Gideon · SRE & DevOps</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="shell">
+
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-chrome">
+      <span class="dot dot-red"></span>
+      <span class="dot dot-yellow"></span>
+      <span class="dot dot-green"></span>
+      <span class="sidebar-title">~gideon</span>
+      <span class="kbd">Ctrl+K</span>
+    </div>
+
+    <nav>
+      <a href="#about"    class="nav-item active" data-section="about">
+        <span class="nav-icon">$</span> ABOUT    <span class="nav-arrow">›</span>
+      </a>
+      <a href="#projects" class="nav-item" data-section="projects">
+        <span class="nav-icon">$</span> PROJECTS <span class="nav-arrow">›</span>
+      </a>
+      <a href="#skills"   class="nav-item" data-section="skills">
+        <span class="nav-icon">$</span> SKILLS   <span class="nav-arrow">›</span>
+      </a>
+      <a href="#work"     class="nav-item" data-section="work">
+        <span class="nav-icon">$</span> WORK     <span class="nav-arrow">›</span>
+      </a>
+      <a href="#blog"     class="nav-item" data-section="blog">
+        <span class="nav-icon">$</span> BLOG     <span class="nav-arrow">›</span>
+      </a>
+    </nav>
+
+    <div class="sidebar-socials">
+      <a href="mailto:galosikhena@gmail.com"                            class="social-btn" title="Email">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+      </a>
+      <a href="https://github.com/GideonIsBuilding"              class="social-btn" title="GitHub" target="_blank" rel="noopener noreferrer">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+      </a>
+      <a href="https://linkedin.com/in/gideon-aleonogwe"         class="social-btn" title="LinkedIn" target="_blank" rel="noopener noreferrer">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+      </a>
+    </div>
+  </aside>
+
+  <main class="main">
+
+    <section id="about">
+      <div class="cmd-label">
+        <span class="prompt">$</span>
+        <span class="cmd">cat</span>
+        <span class="arg">~/about.md</span>
+      </div>
+
+      <h1 class="hero-name">Gideon</h1>
+
+      <p class="hero-tagline">
+        DevOps &amp; SRE engineer building <strong>observable, resilient infrastructure</strong>.
+        I specialize in monitoring pipelines, synthetic checks, and alert engineering using
+        <strong>Prometheus, Grafana, Splunk</strong>, and <strong>PagerDuty</strong>.
+      </p>
+
+      <div class="status-badge">
+        <span class="status-dot"></span>
+        systems nominal · currently @ CAREER BREAK
+      </div>
+
+      <div class="cta-row">
+        <a href="#projects" class="cta-btn primary">See Projects →</a>
+        <a href="#work"     class="cta-btn">Experience →</a>
+        <a href="#skills"   class="cta-btn">Skills →</a>
+        <a href="https://docs.google.com/document/d/1HI3KdIYYHn5eEckRfs7-f4cfKvDoMScq8tuWugTmTC4/edit?usp=sharing"         class="cta-btn">Resume →</a>
+      </div>
+
+      <div class="active-card">
+        <div class="active-card-title">// Active Workstreams</div>
+        <div class="project-line">
+          <span class="proj-idx">[1]</span>
+          <span>MFT/SFTP synthetic monitoring via Python lifecycle checks writing to node_exporter's textfile collector.</span>
+        </div>
+      </div>
+
+      <div class="cmd-label" style="margin-top: 32px;">
+        <span class="prompt">$</span>
+        <span class="cmd">cat</span>
+        <span class="arg">contact.txt</span>
+      </div>
+
+      <div class="contact-row">
+        <a href="mailto:galosikhena@gmail.com"                          class="contact-btn">✉ email</a>
+        <a href="https://github.com/GideonIsBuilding"            class="contact-btn" target="_blank" rel="noopener noreferrer">⌥ github</a>
+        <a href="https://linkedin.com/in/gideon-aleonogwe"       class="contact-btn" target="_blank" rel="noopener noreferrer">in linkedin</a>
+      </div>
+    </section>
+
+    <section id="git-activity">
+      <div class="cmd-label">
+        <span class="prompt">$</span>
+        <span class="cmd">git</span>
+        <span class="arg">activity @GideonIsBuilding</span>
+      </div>
+      <div class="git-section">
+        <div class="git-grid" id="gitGrid"></div>
+        <div class="git-legend">
+          <span id="gitCount" style="font-size:11px;color:var(--muted);font-style:italic;margin-right:auto;"></span>
+          <span>Less</span>
+          <div class="git-legend-cells">
+            <div style="width:10px;height:10px;border-radius:2px;background:#161b22;"></div>
+            <div style="width:10px;height:10px;border-radius:2px;background:#2a3a1e;"></div>
+            <div style="width:10px;height:10px;border-radius:2px;background:#3d5e28;"></div>
+            <div style="width:10px;height:10px;border-radius:2px;background:#5a8a34;"></div>
+            <div style="width:10px;height:10px;border-radius:2px;background:#79c142;"></div>
+          </div>
+          <span>More</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="cmd-label">
+        <span class="prompt">$</span>
+        <span class="cmd">ls</span>
+        <span class="arg">~/projects/</span>
+      </div>
+
+      <div class="projects-list">
+
+        <div class="proj-card">
+          <div class="proj-header">
+            <span class="proj-name">sftp-synthetic-monitor</span>
+            <span class="proj-type">observability</span>
+          </div>
+          <p class="proj-desc">
+            End-to-end SFTP lifecycle check: connect → authenticate → upload → download → SHA-256 verify → cleanup.
+            Writes Prometheus metrics to node_exporter's textfile collector. Covers WFM (ukggov.net) and
+            UDES (mykronos.com) endpoints across DoD/Navy and commercial stacks.
+          </p>
+          <div class="proj-tags">
+            <span class="proj-tag">python</span>
+            <span class="proj-tag">prometheus</span>
+            <span class="proj-tag">grafana</span>
+            <span class="proj-tag">SHA-256</span>
+            <span class="proj-tag">monitoring</span>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-header">
+            <span class="proj-name">automated-integration-and-deployment-pipelines</span>
+            <span class="proj-type">deployment</span>
+          </div>
+          <p class="proj-desc">
+            Comprehensive CI/CD pipelines integrating Terraform for infrastructure automation and Ansible for configuration management. 
+            Designed GitOps workflows to streamline deployments for a three-tier application stack and monitoring solutions (Prometheus, Grafana, Loki). 
+            Implemented branching strategies to automate infrastructure validation, planning, and application deployment, and delivered modular and reusable workflows for validation, planning, applying, and monitoring, ensuring efficient and scalable operations.
+          </p>
+          <div class="proj-tags">
+            <span class="proj-tag">ci/cd</span>
+            <span class="proj-tag">monitoring</span>
+            <span class="proj-tag">infra</span>
+            <span class="proj-tag">gitops</span>
+            <span class="proj-tag">client-server</span>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-header">
+            <span class="proj-name">flask-k8s-cicd-pipeline</span>
+            <span class="proj-type">infrastructure</span>
+          </div>
+          <p class="proj-desc">
+            Containerized a Flask service using Docker (Python 3.10 Alpine), served via Gunicorn, and built a full CI/CD pipeline around it. 
+            GitHub Actions builds and pushes versioned images to Docker Hub on every push to main, with the image tag tied to github.run_number. 
+            Kubernetes deployment is fully automated via Terraform using the Kubernetes provider — provisioning a configurable-replica Deployment and a NodePort Service. 
+            The workflow closes the CI/IaC loop by automatically updating the Terraform image variable to reference the latest build, ensuring no manual tag bumping between pipeline and infrastructure.
+          </p>
+          <div class="proj-tags">
+            <span class="proj-tag">docker</span>
+            <span class="proj-tag">python</span>
+            <span class="proj-tag">github-actions</span>
+            <span class="proj-tag">k8s</span>
+            <span class="proj-tag">terraform</span>
+            <span class="proj-tag">ci/cd</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="cmd-label">
+        <span class="prompt">$</span>
+        <span class="cmd">cat</span>
+        <span class="arg">~/.toolbox</span>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-category">// Observability</div>
+          <div class="skill-list">
+            <span class="skill-tag">Prometheus</span>
+            <span class="skill-tag">Grafana</span>
+            <span class="skill-tag">Splunk</span>
+            <span class="skill-tag">PromQL</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-category">// Incident &amp; Alerting</div>
+          <div class="skill-list">
+            <span class="skill-tag">PagerDuty</span>
+            <span class="skill-tag">Alert Engineering</span>
+            <span class="skill-tag">SLO / SLA</span>
+            <span class="skill-tag">On-call</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-category">// Synthetic Monitoring</div>
+          <div class="skill-list">
+            <span class="skill-tag">k6</span>
+            <span class="skill-tag">k6 Browser</span>
+            <span class="skill-tag">Python Scripts</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-category">// Infrastructure</div>
+          <div class="skill-list">
+            <span class="skill-tag">Kubernetes</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Ansible</span>
+            <span class="skill-tag">Terraform</span>
+            <span class="skill-tag">Jenkins</span>
+            <span class="skill-tag">GitHub Actions</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-category">// Languages</div>
+          <div class="skill-list">
+            <span class="skill-tag">Python</span>
+            <!-- <span class="skill-tag">Go</span> -->
+            <span class="skill-tag">Bash</span>
+            <span class="skill-tag">PowerShell</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-category">// Environments</div>
+          <div class="skill-list">
+            <span class="skill-tag">AWS</span>
+            <span class="skill-tag">GCP</span>
+            <span class="skill-tag">Digital Ocean</span>
+            <span class="skill-tag">Linux</span>
+            <span class="skill-tag">Windows Server</span>
+            <span class="skill-tag">F5</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="work">
+      <div class="cmd-label">
+        <span class="prompt">$</span>
+        <span class="cmd">cat</span>
+        <span class="arg">~/experience.log</span>
+      </div>
+
+      <div class="exp-list">
+
+        <div class="exp-item">
+          <div class="exp-timeline">
+            <div class="exp-dot"></div>
+            <div class="exp-line"></div>
+          </div>
+          <div class="exp-body">
+            <div class="exp-role">Monitoring &amp; Observability Engineer</div>
+            <div class="exp-company">TechPeak Lab | London</div>
+            <div class="exp-period">Sept 2024 - Mar 2026</div>
+            <ul class="exp-bullets">
+              <li>Migrated 1,200+ SCOM alerts to Splunk, automated NOC forwarding, and diagnosed high-severity Windows Server incidents, reducing response latency by 45%</li>
+              <li>Developed Python and PowerShell remediation scripts integrated into operational playbooks, automating recovery for 70% of repetitive alerts and cutting intervention time by 60%</li>
+              <li>Implemented multi-layer validity checks (Layers 1–6) for critical services, improving MTTD by 35% and MTTR by 42% across high-priority incidents</li>
+              <li>Designed and deployed Grafana dashboards for 4XX and 5XX error monitoring, giving leadership real-time reliability insights and reducing undetected service degradations by 50%</li>
+              <li>Developed SFTP synthetic monitoring via Python lifecycle checks (connect → auth → upload → download → verify → cleanup) writing to node_exporter textfile collector</li>
+              <li>Participated in ORCA (Operational Root Cause Analysis) reviews for core production systems, preventing recurrence of repeat error patterns and reducing post-incident</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-timeline">
+            <div class="exp-dot"></div>
+            <div class="exp-line"></div>
+          </div>
+          <div class="exp-body">
+            <div class="exp-role">Technical Content Writer</div>
+            <div class="exp-company">Turing | Palo Alto, California</div>
+            <div class="exp-period">May 2025 - Oct 2025</div>
+            <ul class="exp-bullets">
+              <li>Engineered complex, real-world application scenarios to demonstrate the functional depth of Gemini AI agents across workplace automation, business operations, and enterprise systems integration</li>
+              <li>Translated multifaceted business workflows into executable AI logic, designing modular, testable structures that mirrored real-world processes such as sales enablement, lead generation, and automated contact intelligence</li>
+              <li>Developed structured, code-like datasets for AI scenario modeling—simulating key automation tasks including business data extraction, contact enrichment, personalized outreach generation, and intelligent follow-up prioritization</li>
+              <li>Applied software-engineering principles such as iterative refinement, logic debugging, and functional validation to enhance the precision and adaptability of synthetic datasets across multiple industry verticals</li>
+              <li>Collaborated with AI models and human reviewers to identify logic gaps, improve output consistency, and establish scalable frameworks for reproducible testing and agent training</li>
+              <li>Contributed to the development of a reusable AI scenario library, enabling accelerated deployment, benchmarking, and product QA for enterprise-grade automation tools</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-timeline">
+            <div class="exp-dot"></div>
+            <div class="exp-line"></div>
+          </div>
+          <div class="exp-body">
+            <div class="exp-role">DevOps Engineer</div>
+            <div class="exp-company">HNG Tech | Lagos</div>
+            <div class="exp-period">Jun 2024 - Aug 2024</div>
+            <ul class="exp-bullets">
+              <li>Automated user and group creation, home directory setup, and password management using Bash scripts with error handling and logging for system administration tasks</li>
+              <li>Containerized full-stack web applications (React, FastAPI, PostgreSQL) using Docker and Nginx, ensuring proper proxy configurations and cloud deployment on AWS EC2 with domain setup and HTTPS redirection</li>
+              <li>Developed and deployed an email queue management and logging system using Python behind NGINX with RabbitMQ/Celery to automate email tasks and logging activities</li>
+              <li>Developed and wrote the documentation of a GitHub bot used to automate pull requests and deployments, and provide real-time status updates and resource cleanup</li>
+              <li>Automated deployment of full-stack applications using Ansible, managing PostgreSQL databases, messaging queues, and application configuration on cloud servers</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="blog">
+      <div class="cmd-label">
+        <span class="prompt">$</span>
+        <span class="cmd">ls</span>
+        <span class="arg">~/blog/</span>
+      </div>
+
+      <div class="blog-list">
+        <a href="https://medium.com/@gideonisbuilding/deploying-a-static-website-with-ansible-and-nginx-a559e0ab9878" class="blog-item">
+          <span class="blog-title">Deploying a Static Website with Ansible and Nginx</span>
+          <span class="blog-tag">ansible</span>
+        </a>
+        <a href="https://medium.com/@gideonisbuilding/how-to-write-a-script-to-back-up-files-to-amazon-s3-bucket-using-bash-85e6708a2752" class="blog-item">
+          <span class="blog-title">How to Write a Script to Back Up Files to Amazon S3 Bucket Using Bash</span>
+          <span class="blog-tag">bash</span>
+        </a>
+        <a href="https://www.syntasso.io/post/the-10-best-mcp-servers-for-cloud-native-engineers-in-2025" class="blog-item">
+          <span class="blog-title">The 10 Best MCP Servers for Cloud-Native Engineers in 2025</span>
+          <span class="blog-tag">cloud-native</span>
+        </a>
+        <a href="#" class="blog-item">
+          <span class="blog-title">How I built SFTP synthetic monitoring with Python and node_exporter</span>
+          <span class="blog-tag">observability</span>
+        </a>
+        <a href="#" class="blog-item">
+          <span class="blog-title">k6 browser module vs Playwright: choosing the right tool for UI probes</span>
+          <span class="blog-tag">synthetic monitoring</span>
+        </a>
+        <a href="#" class="blog-item">
+          <span class="blog-title">Debugging false-positive disk alerts in Prometheus — the tmpfs pitfall</span>
+          <span class="blog-tag">alerting</span>
+        </a>
+        <a href="#" class="blog-item">
+          <span class="blog-title">PagerDuty routing gone wrong: tracing a post-migration misconfiguration</span>
+          <span class="blog-tag">incident engineering</span>
+        </a>
+      </div>
+
+    </section>
+
+  </main>
+</div>
+
+<button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+  <span></span><span></span><span></span>
+</button>
+<div class="overlay" id="overlay"></div>
+
+<script src="main.js"></script>
+</body>
+</html>
