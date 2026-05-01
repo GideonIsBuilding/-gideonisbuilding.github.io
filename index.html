@@ -150,6 +150,25 @@
 
         <div class="proj-card">
           <div class="proj-header">
+            <span class="proj-name">anomaly-detector</span>
+            <span class="proj-type">devsecops</span>
+          </div>
+          <p class="proj-desc">
+            Real-time HTTP traffic anomaly detection engine built alongside a Nextcloud instance. Continuously tails Nginx JSON access logs, maintains deque-based sliding windows per IP and globally, and computes a rolling 30-minute baseline using mean and standard deviation. 
+            Flags anomalies when the z-score exceeds 3.0 or the rate surpasses 5x the baseline mean — whichever fires first. Blocks offending IPs via iptables DROP rules at the kernel level within 5 seconds and releases bans on a backoff schedule (10min → 30min → 2hrs → permanent). 
+            Ships with Slack alerting, a structured audit log, and a live metrics dashboard served at a public subdomain refreshing every 3 seconds.
+          </p>
+          <div class="proj-tags">
+            <span class="proj-tag">go</span>
+            <span class="proj-tag">docker</span>
+            <span class="proj-tag">nginx</span>
+            <span class="proj-tag">iptables</span>
+            <span class="proj-tag">devsecops</span>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-header">
             <span class="proj-name">trackr</span>
             <span class="proj-type">full-stack</span>
           </div>
@@ -386,6 +405,10 @@
         <a href="https://www.syntasso.io/post/the-10-best-mcp-servers-for-cloud-native-engineers-in-2025" class="blog-item">
           <span class="blog-title">The 10 Best MCP Servers for Cloud-Native Engineers in 2025</span>
           <span class="blog-tag">cloud-native</span>
+        </a>
+        <a href="https://medium.com/@gideonisbuilding/i-built-a-tool-that-detects-ddos-attacks-in-real-time-heres-exactly-how-it-works-95860a781468" class="blog-item">
+          <span class="blog-title">I Built a Tool That Detects DDoS Attacks in Real Time — Here’s Exactly How It Works</span>
+          <span class="blog-tag">devsecops</span>
         </a>
         <a href="#" class="blog-item">
           <span class="blog-title">How I built SFTP synthetic monitoring with Python and node_exporter</span>
